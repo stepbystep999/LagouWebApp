@@ -16,6 +16,10 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider', function (
         url: '/position/:id',
         templateUrl: 'view/position.html',
         controller: 'positionCtrl'
+    }).state('company', {
+        url: '/company/:id',
+        templateUrl: 'view/company.html',
+        controller: 'companyCtrl'
     });
     // 若先前的路由都不满足条件，则跳转至下面的路由id
     $urlRouterProvider.otherwise('main');
