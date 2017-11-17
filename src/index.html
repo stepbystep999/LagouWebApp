@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/index.css" media="screen" title="no title" charset="utf-8">
+    <title>LagouWebApp</title>
+</head>
+
+<body>
+    <div ui-view>
+    </div>
+
+    <script type="text/javascript">
+        document.getElementsByTagName('html')[0].style.fontSize = window.screen.width / 10 + 'px';
+    </script>
+    <script src="vendor/angular/angular.min.js" charset="utf-8"></script>
+    <script src="vendor/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script>
+    <script src="js/index.js" charset="utf-8"></script>
+</body>
+
+</html>

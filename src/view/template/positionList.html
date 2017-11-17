@@ -1,0 +1,12 @@
+<ul class="bg-w position-list">
+    <!-- 下面的data为main.html中传递进来的属性 -->
+    <li ui-sref="position({id:item.id})" class="item" ng-repeat="item in data">
+        <!-- ng-开头的指令都可以绑定表达式，ng-src和ng-href除外 -->
+        <img class="f-l logo" ng-src="{{item.imageUrl}}" alt="">
+        <h3 class="title" ng-bind="item.job"></h3>
+        <p class="text" ng-bind="item.companyName+'['+item.cityName+']'+' '+item.industryName"> </p>
+        <!-- <p class="text" ng-bind="item.salaryName"></p> -->
+        <p class="text" ng-bind="item.date"></p>
+        <div class="clear"></div>
+    </li>
+</ul>

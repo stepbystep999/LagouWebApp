@@ -1,0 +1,11 @@
+'use strict';
+
+// 调用app模块，执行directive方法
+// 此处的appFoot对应html中的app-foot，-h即为H，这是因为html中不能识别大写字母
+angular.module('app').directive('appFoot', [function() {
+    return {
+        restric: 'A',    // restrict有4个属性：AEMC，属性、元素、样式、注释；即以不同的方式调用指令
+        replace: true,  // 把外层的元素替换掉，即<div app-foot></div>
+        templateUrl: 'view/template/foot.html'
+    };
+}]);
